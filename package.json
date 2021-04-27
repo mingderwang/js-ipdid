@@ -1,5 +1,5 @@
 {
-  "name": "@muzamint/ipdid",
+  "name": "@mingderwang/js-ipdid",
   "version": "0.0.0",
   "source": "src/index.ts",
   "main": "dist/index.umd.js",
@@ -25,7 +25,8 @@
     "typescript"
   ],
   "files": [
-    "dist/**.js*",
-    "dist/**/*.ts"
+    "src/cli.js",
+    "src/index.ts",
+    "yarn.lock"
   ]
 }
