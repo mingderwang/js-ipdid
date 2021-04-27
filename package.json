@@ -1,0 +1,31 @@
+{
+  "name": "@ipdid/cli",
+  "version": "0.0.0",
+  "source": "src/index.ts",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.modern.module.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "bin": {
+    "js-ipdid": "src/cli.js"
+  },
+  "scripts": {
+    "build": "microbundle --define PKG_VERSION=$npm_package_version",
+    "watch": "microbundle watch --define PKG_VERSION=$npm_package_version"
+  },
+  "dependencies": {
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "microbundle": "^0.13.0"
+  },
+  "keywords": [
+    "microbundle",
+    "typescript"
+  ],
+  "files": [
+    "dist/**.js*",
+    "dist/**/*.ts"
+  ]
+}
